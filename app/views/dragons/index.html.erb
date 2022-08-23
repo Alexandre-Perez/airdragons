@@ -1,21 +1,15 @@
-
-
-<div class="container">
-
-  <div class="row align-items-start">
-    <div class="col-4">
-    <% @dragons.each do |dragon| %>
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"/>
-        <div class="card-trip-infos">
-          <div>
-            <p><%= dragon.name %></p>
-            <p>Short description here!</p>
+    <div class="wrapper">
+     <% @dragons.each do |dragon| %>
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"/>
+          <div class="card-trip-infos">
+            <div>
+              <p><%= dragon.name %></p>
+              <p><%= dragon.address %></p>
+            </div>
+            <h2 class="card-trip-pricing">£99.99</h2>
+            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
           </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-
-         </div>
-      </div>
-      <% end %>
+        </div>
+     <% end %>
     </div>
