@@ -15,18 +15,16 @@ Dragon.destroy_all
 puts "destroy finished"
 
 20.times do
-  User.create(
+ user = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     password: Faker::Internet.password(min_length: 8),
     phone_number: Faker::PhoneNumber.phone_number
   )
-end
 
-20.times do
   Dragon.create!(
-    user_id:,
+    user: user,
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
     address: Faker::Address.city
