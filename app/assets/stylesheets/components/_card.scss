@@ -1,9 +1,13 @@
 .card-trip {
   overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px #F1BC31;
   margin: 10px;
-  border-radius: 5px;
+  border: solid 1px #F1BC31;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 25px;
 }
 
 .card-trip > img {
@@ -33,15 +37,26 @@
   position: relative;
 }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
-
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: none;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.fa-brands {
+  font-size: 29px;
+  color: #B22222;
+  opacity: 0.3;
+  transition: 0.6s;
+  position: absolute;
+  top: -15px;
+  left: 235px;
+}
+
+.fa-brands:hover {
+  opacity: 1;
+  color: #E25822;
 }
