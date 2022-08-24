@@ -36,7 +36,7 @@ puts "Creating new database"
 
   file = URI.open("https://source.unsplash.com/random/?dragon")
   dragon.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
-  dragon.save
+  dragon.save!
 end
 
 puts "finished"
