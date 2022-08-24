@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 require "faker"
+require "open-uri"
+
+
 
 puts "creating"
 
@@ -23,12 +26,16 @@ puts "destroy finished"
     phone_number: Faker::PhoneNumber.phone_number
   )
 
-  Dragon.create!(
+  dragon = Dragon.new(
     user: user,
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
     address: Faker::Address.city
   )
+
+  file = URI.open("https://source.unsplash.com/random/?dragon")
+  dragon.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+  dragon.save
 end
 
 puts "finished"
