@@ -13,8 +13,8 @@ body {
               <i class="fa-solid fa-location-arrow"></i><h4><%= dragon.address %></h4>
             </div>
             <a href="#"><i class="fa-brands fa-d-and-d"></i></a>
+            <%= link_to "Show", dragon_path(dragon) %>
             <h2 class="card-trip-pricing"><%= rand(500..3000) %>$</h2>
-
           </div>
         </div>
      <% end %>
