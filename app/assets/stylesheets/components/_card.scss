@@ -1,29 +1,29 @@
 .card-trip {
   overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px #bb9127;
   margin: 10px;
-  border-radius: 5px;
+  border: solid 1px #ad8622;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  transition: 0.6s;
 }
 
 .card-trip > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+  border-bottom: solid 1px #F1BC31;
 }
 
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  text-shadow: #F1BC31 1px 0 10px;
 }
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
 
 .card-trip .card-trip-infos {
   padding: 16px;
@@ -33,15 +33,49 @@
   position: relative;
 }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
-
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: none;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.fa-brands {
+  font-size: 29px;
+  color: #B22222;
+  opacity: 0.8;
+  position: absolute;
+  top: -15px;
+  left: 250px;
+}
+
+.card-trip:hover {
+  opacity: 1;
+  color: #E25822;
+}
+
+.card-trip h3 {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip h4 {
+  font-size: 14px;
+  opacity: .7;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.fa-location-arrow {
+  font-size: 14px;
+  color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 51px;
+  left: 15px;
 }

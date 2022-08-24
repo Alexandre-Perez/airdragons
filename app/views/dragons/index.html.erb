@@ -1,15 +1,35 @@
-    <div class="wrapper">
+<style>
+body {
+  background: linear-gradient(black,#B22222);
+}
+</style>
+<div class="wrapper">
      <% @dragons.each do |dragon| %>
         <div class="card-trip">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"/>
+          <img src="https://www.dinosoria.com/dragon-1/images/dragon-5_jpg.jpg"/>
           <div class="card-trip-infos">
             <div>
-              <p><%= dragon.name %></p>
-              <p><%= dragon.address %></p>
+              <h3><%= dragon.name %></h3>
+              <i class="fa-solid fa-location-arrow"></i><h4><%= dragon.address %></h4>
             </div>
-            <h2 class="card-trip-pricing">£99.99</h2>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+            <a href="#"><i class="fa-brands fa-d-and-d"></i></a>
+            <h2 class="card-trip-pricing"><%= rand(500..3000) %>$</h2>
+
           </div>
         </div>
      <% end %>
     </div>
+
+
+
+ <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">AirDragons © 2022</p>
+        </footer>
