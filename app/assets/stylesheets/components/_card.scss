@@ -2,12 +2,13 @@
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(30px);
-  box-shadow: 0 0 15px #F1BC31;
+  box-shadow: 0 0 15px #bb9127;
   margin: 10px;
-  border: solid 1px #F1BC31;
+  border: solid 1px #ad8622;
   border-radius: 20px;
   margin-right: 30px;
   margin-bottom: 25px;
+  transition: 0.6s;
 }
 
 .card-trip > img {
@@ -44,14 +45,13 @@
 .fa-brands {
   font-size: 29px;
   color: #B22222;
-  opacity: 0.3;
-  transition: 0.6s;
+  opacity: 0.8;
   position: absolute;
   top: -15px;
   left: 250px;
 }
 
-.fa-brands:hover {
+.card-trip:hover {
   opacity: 1;
   color: #E25822;
 }
