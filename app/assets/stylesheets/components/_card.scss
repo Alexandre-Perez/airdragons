@@ -14,20 +14,15 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+  border-bottom: solid 1px #F1BC31;
 }
 
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  text-shadow: #F1BC31 1px 0 10px;
 }
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
 
 .card-trip .card-trip-infos {
   padding: 16px;
@@ -53,10 +48,34 @@
   transition: 0.6s;
   position: absolute;
   top: -15px;
-  left: 235px;
+  left: 250px;
 }
 
 .fa-brands:hover {
   opacity: 1;
   color: #E25822;
+}
+
+.card-trip h3 {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip h4 {
+  font-size: 14px;
+  opacity: .7;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.fa-location-arrow {
+  font-size: 14px;
+  color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 51px;
+  left: 15px;
 }
