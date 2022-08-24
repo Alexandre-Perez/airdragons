@@ -7,13 +7,14 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "faker"
 
-puts "creating"
+puts "Destroying existing database"
 
 User.destroy_all
 Dragon.destroy_all
 
 puts "destroy finished"
 
+puts "Creating new database"
 20.times do
  user = User.create(
     first_name: Faker::Name.first_name,
@@ -27,7 +28,7 @@ puts "destroy finished"
     user: user,
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
-    address: Faker::Address.city
+    address: Faker::Address.country
   )
 end
 
