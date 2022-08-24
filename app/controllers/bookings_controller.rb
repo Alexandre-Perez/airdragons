@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: %i[show create]
-  before_action :set_user, only: [:show, :create]
+  before_action :set_booking, only: %i[show]
+  before_action :set_user, only: [:show, :create, :new]
 
   def index
     @booking = Booking.all
@@ -22,16 +22,16 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @booking = Booking.new(booking_params)
-
-    @user = User.find(params[:id])
-    @booking.user = @user
-
-    if @booking.save
-      redirect_to booking_path(@user)
-    else
-      render :new
-    end
+    redirect_to dragons_path
+    # @booking = Booking.new(booking_params)
+    # @booking.user = @user
+    # @booking.dragon = @user.dragons.first
+    # raise
+    # if @booking.save
+    #
+    # else
+    #   render :new
+    # end
   end
 
   private
@@ -45,6 +45,6 @@ class BookingsController < ApplicationController
   end
 
   def set_user
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 end

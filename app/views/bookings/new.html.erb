@@ -1,5 +1,6 @@
-<%= form_with model: @booking do |f| %>
-  <%= f.input :start_date, :as => :datetime_picker%>
+<h1>book now</h1>
+<%= simple_form_for [@user,@booking] do |f| %>
+  <%= f.input :start_date %>
   <%= f.input :end_date %>
-  <%= f.submit %>
+  <%= f.button :submit %>
 <% end %>
