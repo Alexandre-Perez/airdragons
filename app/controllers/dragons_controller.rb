@@ -5,5 +5,13 @@ class DragonsController < ApplicationController
 
   def show
     @dragon = Dragon.find(params[:id])
+
+    @markers = [
+      {
+        lat: @dragon.latitude,
+        lng: @dragon.longitude
+      }
+    ]
   end
+
 end
