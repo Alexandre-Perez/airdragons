@@ -1,5 +1,5 @@
 <%= form_with model: @booking do |f| %>
-  <%= f.input :start_date %>
+  <%= f.input :start_date, :as => :datetime_picker%>
   <%= f.input :end_date %>
   <%= f.submit %>
 <% end %>
