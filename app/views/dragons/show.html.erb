@@ -1,9 +1,12 @@
 
-<%# <%= link_to "Book Now", new_user_booking_path(current_user) %>
+
+
 <div class='container-profil'>
   <%= cl_image_tag @dragon.photo.key, crop: :fill %>
     </div>
         <h3><%= @dragon.name %></h3>
+
+<%= link_to "book now", new_dragon_booking_path(@dragon) %>
 
 
   <div class='mapbox'

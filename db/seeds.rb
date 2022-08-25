@@ -18,8 +18,9 @@ Dragon.destroy_all
 puts "destroy finished"
 
 puts "Creating new database"
+
 20.times do
- user = User.create(
+  user = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
@@ -28,7 +29,6 @@ puts "Creating new database"
   )
 
   dragon = Dragon.new(
-    user: user,
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
     address: Faker::Address.country
@@ -36,7 +36,7 @@ puts "Creating new database"
 
   file = URI.open("https://source.unsplash.com/random/?dragon")
   dragon.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
-  dragon.save
+  dragon.save!
 end
 
 puts "finished"
