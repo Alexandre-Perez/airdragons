@@ -1,0 +1,18 @@
+<div class="bodie">
+<br>
+<br>
+<br>
+<h1 class="header"> My Personnal Bookings</h1>
+
+
+<div class="wrappere">
+     <% @bookings.each do |booking| %>
+        <div class="recap-card">
+            <div class="trip-infos">
+                <p class="supert">Start Date :</p><p class="specific"><%= booking.start_date %></p>
+                <p class="supert">End Date :</p><p class="specific"><%= booking.end_date %></p>
+              </div>
+            </div>
+        <% end %>
+    </div>
+</div>
