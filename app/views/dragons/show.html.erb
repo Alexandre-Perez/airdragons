@@ -1,7 +1,17 @@
+
+
+
+<div class='container-profil'>
+  <%= cl_image_tag @dragon.photo.key, crop: :fill %>
+    </div>
+        <h3><%= @dragon.name %></h3>
+
 <%= link_to "book now", new_dragon_booking_path(@dragon) %>
 
-<div style="width: 100%; height: 600px;"
+
+  <div class='mapbox'
   data-controller="map"
   data-map-markers-value="<%= @markers.to_json %>"
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
 </div>
