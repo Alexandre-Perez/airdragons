@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
   before_action :set_dragon, only: [:create, :new]
 
   def index
-    @booking = Booking.all
+    @bookings = Booking.where(user: current_user)
   end
 
   def new

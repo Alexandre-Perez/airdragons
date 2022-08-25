@@ -1,0 +1,39 @@
+.header {
+  font-size: bold;
+  display: inline-block;
+  margin-left: 400px;
+  color: white;
+  text-shadow: #ad8622 1px 0 10px;
+}
+
+.bodie {
+  background: linear-gradient(black,#B22222);
+  width: 181vh;
+  height: 100vh;
+}
+
+.recap-card {
+  border: #ad8622 solid 1px;
+  border-radius: 30px;
+  width: 300px;
+  height: 150px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.supert {
+  color: white;
+  text-shadow: #ad8622 1px 0 10px;
+  font-size: 15px;
+  position:relative;
+  display: inline-block;
+}
+
+.specific {
+  color: #ad8622;
+  text-shadow: #ad8622 1px 0 10px;
+  font-size: 15px;
+  position:relative;
+  display: inline-block;
+}
