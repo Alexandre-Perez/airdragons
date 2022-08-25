@@ -2,17 +2,19 @@
 <br>
 <br>
 <br>
-<h1 class="header"> My Personnal Bookings</h1>
+<h1 class="header"> My Personnal Bookings :</h1>
 
 
 <div class="wrappere">
      <% @bookings.each do |booking| %>
         <div class="recap-card">
             <div class="trip-infos">
-                <p class="supert">Start Date :</p><p class="specific"><%= booking.start_date %></p>
-                <p class="supert">End Date :</p><p class="specific"><%= booking.end_date %></p>
+                <p class="supert">Begin of Booking 🐲</p><p class="specific"><%= booking.start_date %></p>
+                <p class="supert">Ending Date 🛑</p><p class="specific"><%= booking.end_date %></p>
+                <p class="dragonid"><%= booking.dragon_id %></p>
               </div>
             </div>
         <% end %>
     </div>
+    <p class="exampleid">123</p><p class="endmessage"> - Don't forget to use The reference of your reservation while you'll <span class="imp">comunicate</span> with the owner !</p>
 </div>
