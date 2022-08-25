@@ -18,8 +18,9 @@ Dragon.destroy_all
 puts "destroy finished"
 
 puts "Creating new database"
+
 20.times do
- user = User.create(
+  user = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
@@ -28,7 +29,6 @@ puts "Creating new database"
   )
 
   dragon = Dragon.new(
-    user: user,
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
     address: Faker::Address.country
