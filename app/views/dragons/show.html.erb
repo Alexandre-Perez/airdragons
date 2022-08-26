@@ -1,17 +1,18 @@
-
-
-
-<div class='container-profil'>
-  <%= cl_image_tag @dragon.photo.key, crop: :fill %>
-    </div>
+<div id='container'>
+  <div id='pic-profil'>
+    <%= cl_image_tag @dragon.photo.key, crop: :fill %>
+      <div class='name'>
         <h3><%= @dragon.name %></h3>
-
-<%= link_to "book now", new_dragon_booking_path(@dragon) %>
-
-
-  <div class='mapbox'
+        <h4><%= @dragon.address %></h4>
+        <p><%= @dragon.description %></p>
+      </div>
+  </div>
+</div>
+<div id='mapbox'
   data-controller="map"
   data-map-markers-value="<%= @markers.to_json %>"
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-  </div>
 </div>
+
+
+<%= link_to "book now", new_dragon_booking_path(@dragon) %>
