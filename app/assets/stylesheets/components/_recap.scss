@@ -10,10 +10,12 @@
   background: linear-gradient(black,#B22222);
   width: 181vh;
   height: 100vh;
+  //background-image: url("app/assets/images/dragon.png");
 }
 
 .recap-card {
   border: #ad8622 solid 1px;
+  box-shadow: 4px 4px 4px #ad8622;
   border-radius: 30px;
   width: 300px;
   height: 150px;
@@ -25,9 +27,10 @@
 .supert {
   color: white;
   text-shadow: #ad8622 1px 0 10px;
-  font-size: 15px;
+  font-size: 20px;
   position:relative;
-  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .specific {
@@ -35,5 +38,40 @@
   text-shadow: #ad8622 1px 0 10px;
   font-size: 15px;
   position:relative;
+  margin-left: 18px;
+}
+
+.dragonid {
+  border: #ad8622 solid 1px;
+  border-radius: 50px;
   display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: -160px;
+  left: 230px;
+  color: white;
+  text-shadow: #ad8622 1px 0 10px;
+}
+
+.endmessage{
+display: inline-block;
+margin-left: 5px;
+color: white;
+font-weight: 100;
+}
+
+.exampleid{
+  border: #ad8622 solid 1px;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-shadow: #ad8622 1px 0 10px;
+  margin-left: 200px;
+}
+
+.imp{
+  color: white;
+  text-shadow: #ad8622 1px 0 10px;
+  font-size: larger;
 }
