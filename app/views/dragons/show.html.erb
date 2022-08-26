@@ -1,9 +1,17 @@
+<style>
+body{
+  background: linear-gradient(black,#B22222);
+}
+</style>
 <div id='container'>
   <div id='pic-profil'>
     <%= cl_image_tag @dragon.photo.key, crop: :fill %>
       <div class='name'>
-        <h3><%= @dragon.name %></h3>
-        <h4><%= @dragon.address %></h4>
+        <h3><strong><%= @dragon.name %></strong></h3>
+        <h4><i><%= @dragon.address %></i></h4>
+          <div class='btn btn-dark btn-outline-white' >
+            <%= link_to "book now", new_dragon_booking_path(@dragon) %>
+          </div>
         <p><%= @dragon.description %></p>
       </div>
   </div>
@@ -13,6 +21,3 @@
   data-map-markers-value="<%= @markers.to_json %>"
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
-
-
-<%= link_to "book now", new_dragon_booking_path(@dragon) %>
