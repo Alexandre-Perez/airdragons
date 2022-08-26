@@ -4,7 +4,7 @@ body {
 }
 </style>
 <div class="wrapper">
-     <% @dragons.each do |dragon| %>
+    <% @dragons.each do |dragon| %>
       <%= link_to dragon_path(dragon) do %>
         <div class="card-trip">
           <%= cl_image_tag dragon.photo.key, crop: :fill %>
