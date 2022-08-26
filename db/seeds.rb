@@ -31,7 +31,7 @@ file = URI.open("https://sfractus-images.cleo.media/unsafe/208x0:1744x1536/641x0
 drogon.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 drogon.save!
 
-12.times do
+54.times do
   dragon = Dragon.new(
     name: Faker::Movies::HowToTrainYourDragon.dragon,
     description: Faker::Fantasy::Tolkien.poem,
