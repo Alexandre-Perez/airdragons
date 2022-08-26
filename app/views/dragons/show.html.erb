@@ -9,8 +9,8 @@ body{
       <div class='name'>
         <h3><strong><%= @dragon.name %></strong></h3>
         <h4><i><%= @dragon.address %></i></h4>
-          <div class='btn btn-dark btn-outline-white' >
-            <%= link_to "book now", new_dragon_booking_path(@dragon) %>
+          <div class='bookingb' >
+            <%= link_to "book now", new_dragon_booking_path(@dragon), class: "supertext" %>
           </div>
         <p><%= @dragon.description %></p>
       </div>

@@ -1,0 +1,26 @@
+.bookingb {
+  border: solid;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px #bb9127;
+  margin-left: 1130px;
+  margin-top: 20px;
+  border: solid 1px #ad8622;
+  border-radius: 20px;
+  transition: 0.6s;
+  display: inline-block;
+  padding: 20px;
+}
+
+.supertext {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.supertext:hover {
+color: rgb(226, 88, 34),
+}
