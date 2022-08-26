@@ -10,3 +10,12 @@
     <%= link_to "", dragons_path, class:"search-btn"%>
   </form>
 </div>
+
+<%= form_with url: dragons_path, method: :get, class: "d-flex" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a dragon"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
